@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Optional;
+import java.util.stream.Collectors;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -60,6 +62,40 @@ public class MyService {
 		}
 		return array;
 	}
+
+    public interface Car { public String getColor(); }
+
+    public class Sonata implements Car {
+        public Sonata() {
+            log.info("=== 출고 === Sonata");
+        }
+
+        @Override
+        public String getColor() {
+            return "=== 색상:RED === Sonata";
+        }
+    }
+
+    public class K5 implements Car {
+        public K5() {
+            log.info("=== 출고 === K5");
+        }
+
+        @Override
+        public String getColor() {
+            return "=== 색상:Blue === K5";
+        }
+    }
+    // 3-2-4 다형성
+    public String page75() {
+        Car car1 = new Sonata();
+        String re1 = car1.getColor();
+        Car car2 = new K5();
+        String re2 = car2.getColor();
+
+        String res = re1 + "<br>" + re2 + "<br>" + "차 두대를 출고하였음";
+        return res;
+    }
 	
 	// 3-2-5 List 컬렉션
 	public Object page76() {
@@ -76,24 +112,24 @@ public class MyService {
 	
 	// 3-2-6 ArrayList 출력
 	public String page77() {
-		List list = new ArrayList<String>();
-		
-		list.add("public");
-		list.add("static");
-		list.add("void");
-		
-		for(int i = 0; i < list.size(); i++) {
-			log.info(list.get(i).toString()); // 순환하여 확인
-		}
-		log.info(list.toString()); // arrayList 확인
-		
-		list.remove(1); // arrayList 1번 index 제거
-		int voidIndex = list.indexOf("void"); // void index 찾기 ( type : int )
-		
-		String result = "void의 index = " + voidIndex;
-		
-		return result;
-	}
+        List list = new ArrayList<String>();
+
+        list.add("public");
+        list.add("static");
+        list.add("void");
+
+        for (int i = 0; i < list.size(); i++) {
+            log.info(list.get(i).toString()); // 순환하여 확인
+        }
+        log.info(list.toString()); // arrayList 확인
+
+        list.remove(1); // arrayList 1번 index 제거
+        int voidIndex = list.indexOf("void"); // void index 찾기 ( type : int )
+
+        String result = "void의 index = " + voidIndex;
+
+        return result;
+    }
 	
 	// 3-2-7 동일성 비교
 	public String page79() {
@@ -187,4 +223,85 @@ public class MyService {
 		
 		return evenList.toString();
 	}
+	
+	// 3-3-4 스트림 API
+	public String page90() {
+		Integer[] integerArray = new Integer[] {1,2,3,4,5,6,7,8,9,10};
+		List<Integer> list = Arrays.asList(integerArray);
+		
+		List evenList = list.stream()
+				.filter(value -> value % 2 == 0).collect(Collectors.toList());
+		
+		evenList.stream().forEach(value -> log.info(value.toString()));
+		return evenList.toString();
+	}
+	
+	// 3-3-5 forEach() - 반복시 하나씩 순회
+	public String page91() {
+		Integer[] integerArray = new Integer[] {1,2,3,4,5};
+		List<Integer> list = Arrays.asList(integerArray);
+		list.stream().forEach(value -> log.info(value.toString()));
+		return list.toString();
+	}
+	
+	// 3-3-6 filter() - 조건에 맞는 요소만 출력
+	public String page92() {
+		Integer[] integerArray = new Integer[] {1,2,3,4,5,6,7,8,9,10};
+		List<Integer> list = Arrays.asList(integerArray);
+		List evenList = list.stream()
+				.filter(value -> value % 3 == 0).collect(Collectors.toList());
+		evenList.stream().forEach(value -> log.info(value.toString()));
+		return evenList.toString();
+	}
+	
+	// 3-3-7 distinct() - 중복제거
+	public String page93() {
+		Integer[] integerArray = new Integer[] {1,1,1,1,2,2,2,3,3,4};
+		List<Integer> list = Arrays.asList(integerArray);
+		List<Integer> distinctList = list.stream().distinct().toList();
+		distinctList.stream().forEach(value -> log.info(value.toString()));
+		return distinctList.toString();
+	}
+
+	// 3-3-8 map() - 컬렉션의 요소들에 특정 연산을 적용한 새로운 스트림을 만듬.
+	public String page94() {
+		String[] lowercaseArray = new String[] {"public", "static", "void"};
+		List<String> lowercaseList = Arrays.asList(lowercaseArray);
+		List<String> uppercaseList = lowercaseList.stream()
+				.map(value -> value.toUpperCase()).toList();
+		uppercaseList.stream().forEach(value -> System.out.println(value));
+		return uppercaseList.toString();
+	}
+		
+	// 3-3-12 값을 포함한 Optional 반환
+	private static Optional<String> getSomeString() {
+		return Optional.ofNullable("public static void");
+	}
+	
+	public Optional<String> page96() {
+		Optional<String> isThisNull = getSomeString();
+		
+		isThisNull.ifPresent(str -> System.out.println(str.toUpperCase()));
+		return isThisNull;
+	}
+		
+	// 3-3-13 안티패턴 - 비효율적이거나 생산적이지 않은 패턴
+	// 코드 가독성을 떨어뜨리거나 성능상 심각한 손실 유발하는 코드패턴
+	public Optional<String> page97() {
+		Optional<String> str = getSomeString();
+		
+		if(str.isPresent()) {
+			System.out.println(str.get().toUpperCase());
+		}
+		return str;
+	}
+		
+	// 3-3-14 안티 패턴 해결
+	public Optional<String> page98() {
+        Optional<String> str = getSomeString();
+
+        str.ifPresent((string) -> System.out.println(string.toUpperCase()));
+
+        return str;
+    }
 }

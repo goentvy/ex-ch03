@@ -1,0 +1,407 @@
+2025-10-13T14:42:44.495+09:00  INFO 7812 --- [ch03] [restartedMain] com.example.demo.Ch03Application         : Starting Ch03Application using Java 21.0.8 with PID 7812 (D:\s09_springboot\day02_1013\ch03\bin\main started by YONSAI in D:\s09_springboot\day02_1013\ch03)
+2025-10-13T14:42:44.496+09:00 DEBUG 7812 --- [ch03] [restartedMain] com.example.demo.Ch03Application         : Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-10-13T14:42:44.496+09:00  INFO 7812 --- [ch03] [restartedMain] com.example.demo.Ch03Application         : No active profile set, falling back to 1 default profile: "default"
+2025-10-13T14:42:44.520+09:00  INFO 7812 --- [ch03] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-13T14:42:44.522+09:00  INFO 7812 --- [ch03] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-13T14:42:44.988+09:00  INFO 7812 --- [ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-10-13T14:42:44.997+09:00  INFO 7812 --- [ch03] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-13T14:42:44.997+09:00  INFO 7812 --- [ch03] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-13T14:42:45.020+09:00  INFO 7812 --- [ch03] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-13T14:42:45.020+09:00  INFO 7812 --- [ch03] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 498 ms
+2025-10-13T14:42:45.214+09:00  INFO 7812 --- [ch03] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-13T14:42:45.234+09:00  INFO 7812 --- [ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-10-13T14:42:45.239+09:00  INFO 7812 --- [ch03] [restartedMain] com.example.demo.Ch03Application         : Started Ch03Application in 1.025 seconds (process running for 1.411)
+2025-10-13T14:43:27.810+09:00  INFO 7812 --- [ch03] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-13T14:43:27.810+09:00  INFO 7812 --- [ch03] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-13T14:43:27.811+09:00  INFO 7812 --- [ch03] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-10-13T15:02:15.516+09:00  INFO 7812 --- [ch03] [RMI TCP Connection(30)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-10-13T15:02:15.517+09:00  INFO 7812 --- [ch03] [RMI TCP Connection(30)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-13T15:02:15.521+09:00  INFO 7812 --- [ch03] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-13T15:08:27.113+09:00  INFO 12252 --- [ch03] [restartedMain] com.example.demo.Ch03Application         : Starting Ch03Application using Java 21.0.8 with PID 12252 (D:\s09_springboot\day02_1013\ch03\bin\main started by YONSAI in D:\s09_springboot\day02_1013\ch03)
+2025-10-13T15:08:27.114+09:00 DEBUG 12252 --- [ch03] [restartedMain] com.example.demo.Ch03Application         : Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-10-13T15:08:27.115+09:00  INFO 12252 --- [ch03] [restartedMain] com.example.demo.Ch03Application         : No active profile set, falling back to 1 default profile: "default"
+2025-10-13T15:08:27.138+09:00  INFO 12252 --- [ch03] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-13T15:08:27.138+09:00  INFO 12252 --- [ch03] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-13T15:08:27.582+09:00  INFO 12252 --- [ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-10-13T15:08:27.591+09:00  INFO 12252 --- [ch03] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-13T15:08:27.591+09:00  INFO 12252 --- [ch03] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-13T15:08:27.614+09:00  INFO 12252 --- [ch03] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-13T15:08:27.614+09:00  INFO 12252 --- [ch03] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 476 ms
+2025-10-13T15:08:27.800+09:00  INFO 12252 --- [ch03] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-13T15:08:27.819+09:00  INFO 12252 --- [ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-10-13T15:08:27.824+09:00  INFO 12252 --- [ch03] [restartedMain] com.example.demo.Ch03Application         : Started Ch03Application in 0.981 seconds (process running for 1.36)
+2025-10-13T15:08:40.791+09:00  INFO 12252 --- [ch03] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-13T15:08:40.791+09:00  INFO 12252 --- [ch03] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-13T15:08:40.792+09:00  INFO 12252 --- [ch03] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-10-13T15:14:51.794+09:00  INFO 12252 --- [ch03] [RMI TCP Connection(16)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-10-13T15:14:51.796+09:00  INFO 12252 --- [ch03] [RMI TCP Connection(16)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-13T15:14:51.799+09:00  INFO 12252 --- [ch03] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-13T15:53:46.950+09:00  INFO 2784 --- [ch03] [restartedMain] com.example.demo.Ch03Application         : Starting Ch03Application using Java 21.0.8 with PID 2784 (D:\s09_springboot\day02_1013\ch03\build\classes\java\main started by YONSAI in D:\s09_springboot\day02_1013\ch03)
+2025-10-13T15:53:46.951+09:00 DEBUG 2784 --- [ch03] [restartedMain] com.example.demo.Ch03Application         : Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-10-13T15:53:46.951+09:00  INFO 2784 --- [ch03] [restartedMain] com.example.demo.Ch03Application         : No active profile set, falling back to 1 default profile: "default"
+2025-10-13T15:53:46.977+09:00  INFO 2784 --- [ch03] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-13T15:53:46.977+09:00  INFO 2784 --- [ch03] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-13T15:53:47.495+09:00  INFO 2784 --- [ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-10-13T15:53:47.504+09:00  INFO 2784 --- [ch03] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-13T15:53:47.504+09:00  INFO 2784 --- [ch03] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-13T15:53:47.528+09:00  INFO 2784 --- [ch03] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-13T15:53:47.529+09:00  INFO 2784 --- [ch03] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 550 ms
+2025-10-13T15:53:47.720+09:00  INFO 2784 --- [ch03] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-13T15:53:47.744+09:00  INFO 2784 --- [ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-10-13T15:53:47.750+09:00  INFO 2784 --- [ch03] [restartedMain] com.example.demo.Ch03Application         : Started Ch03Application in 1.176 seconds (process running for 1.635)
+2025-10-13T15:54:38.052+09:00  INFO 2784 --- [ch03] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-13T15:54:38.052+09:00  INFO 2784 --- [ch03] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-13T15:54:38.052+09:00  INFO 2784 --- [ch03] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-10-13T16:02:19.507+09:00  INFO 2784 --- [ch03] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 6 class path changes (3 additions, 0 deletions, 3 modifications)
+2025-10-13T16:02:19.509+09:00  INFO 2784 --- [ch03] [Thread-5] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-13T16:02:19.512+09:00  INFO 2784 --- [ch03] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-13T16:02:19.578+09:00  INFO 2784 --- [ch03] [restartedMain] com.example.demo.Ch03Application         : Starting Ch03Application using Java 21.0.8 with PID 2784 (D:\s09_springboot\day02_1013\ch03\build\classes\java\main started by YONSAI in D:\s09_springboot\day02_1013\ch03)
+2025-10-13T16:02:19.578+09:00 DEBUG 2784 --- [ch03] [restartedMain] com.example.demo.Ch03Application         : Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-10-13T16:02:19.578+09:00  INFO 2784 --- [ch03] [restartedMain] com.example.demo.Ch03Application         : No active profile set, falling back to 1 default profile: "default"
+2025-10-13T16:02:19.683+09:00  INFO 2784 --- [ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-10-13T16:02:19.684+09:00  INFO 2784 --- [ch03] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-13T16:02:19.684+09:00  INFO 2784 --- [ch03] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-13T16:02:19.692+09:00  INFO 2784 --- [ch03] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-13T16:02:19.692+09:00  INFO 2784 --- [ch03] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 112 ms
+2025-10-13T16:02:19.709+09:00  WARN 2784 --- [ch03] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Ambiguous mapping. Cannot map 'myController' method 
+com.example.demo.controller.MyController#page76()
+to {GET [/page75]}: There is already 'myController' bean method
+com.example.demo.controller.MyController#page75() mapped.
+2025-10-13T16:02:19.710+09:00  INFO 2784 --- [ch03] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-10-13T16:02:19.713+09:00  INFO 2784 --- [ch03] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-10-13T16:02:19.724+09:00 ERROR 2784 --- [ch03] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Ambiguous mapping. Cannot map 'myController' method 
+com.example.demo.controller.MyController#page76()
+to {GET [/page75]}: There is already 'myController' bean method
+com.example.demo.controller.MyController#page75() mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1826) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1221) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1187) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1123) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987) ~[spring-context-6.2.11.jar:6.2.11]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.11.jar:6.2.11]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.5.6.jar:3.5.6]
+	at com.example.demo.Ch03Application.main(Ch03Application.java:10) ~[main/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.5.6.jar:3.5.6]
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'myController' method 
+com.example.demo.controller.MyController#page76()
+to {GET [/page75]}: There is already 'myController' bean method
+com.example.demo.controller.MyController#page75() mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:676) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:637) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:331) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:507) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:84) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$2(AbstractHandlerMethodMapping.java:298) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:986) ~[na:na]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:296) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:265) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:224) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:212) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:237) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1873) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1822) ~[spring-beans-6.2.11.jar:6.2.11]
+	... 21 common frames omitted
+
+2025-10-13T16:03:57.204+09:00  INFO 2784 --- [ch03] [restartedMain] com.example.demo.Ch03Application         : Starting Ch03Application using Java 21.0.8 with PID 2784 (D:\s09_springboot\day02_1013\ch03\build\classes\java\main started by YONSAI in D:\s09_springboot\day02_1013\ch03)
+2025-10-13T16:03:57.204+09:00 DEBUG 2784 --- [ch03] [restartedMain] com.example.demo.Ch03Application         : Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-10-13T16:03:57.204+09:00  INFO 2784 --- [ch03] [restartedMain] com.example.demo.Ch03Application         : No active profile set, falling back to 1 default profile: "default"
+2025-10-13T16:03:57.308+09:00  INFO 2784 --- [ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-10-13T16:03:57.309+09:00  INFO 2784 --- [ch03] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-13T16:03:57.309+09:00  INFO 2784 --- [ch03] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-13T16:03:57.318+09:00  INFO 2784 --- [ch03] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2025-10-13T16:03:57.318+09:00  INFO 2784 --- [ch03] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 112 ms
+2025-10-13T16:03:57.333+09:00  WARN 2784 --- [ch03] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Ambiguous mapping. Cannot map 'myController' method 
+com.example.demo.controller.MyController#page76()
+to {GET [/page75]}: There is already 'myController' bean method
+com.example.demo.controller.MyController#page75() mapped.
+2025-10-13T16:03:57.334+09:00  INFO 2784 --- [ch03] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-10-13T16:03:57.336+09:00  INFO 2784 --- [ch03] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-10-13T16:03:57.338+09:00 ERROR 2784 --- [ch03] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Ambiguous mapping. Cannot map 'myController' method 
+com.example.demo.controller.MyController#page76()
+to {GET [/page75]}: There is already 'myController' bean method
+com.example.demo.controller.MyController#page75() mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1826) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1221) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1187) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1123) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987) ~[spring-context-6.2.11.jar:6.2.11]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.11.jar:6.2.11]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.5.6.jar:3.5.6]
+	at com.example.demo.Ch03Application.main(Ch03Application.java:10) ~[main/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.5.6.jar:3.5.6]
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'myController' method 
+com.example.demo.controller.MyController#page76()
+to {GET [/page75]}: There is already 'myController' bean method
+com.example.demo.controller.MyController#page75() mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:676) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:637) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:331) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:507) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:84) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$2(AbstractHandlerMethodMapping.java:298) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:986) ~[na:na]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:296) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:265) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:224) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:212) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:237) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1873) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1822) ~[spring-beans-6.2.11.jar:6.2.11]
+	... 21 common frames omitted
+
+2025-10-13T16:05:12.883+09:00  INFO 13756 --- [ch03] [restartedMain] com.example.demo.Ch03Application         : Starting Ch03Application using Java 21.0.8 with PID 13756 (D:\s09_springboot\day02_1013\ch03\build\classes\java\main started by YONSAI in D:\s09_springboot\day02_1013\ch03)
+2025-10-13T16:05:12.884+09:00 DEBUG 13756 --- [ch03] [restartedMain] com.example.demo.Ch03Application         : Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-10-13T16:05:12.885+09:00  INFO 13756 --- [ch03] [restartedMain] com.example.demo.Ch03Application         : No active profile set, falling back to 1 default profile: "default"
+2025-10-13T16:05:12.909+09:00  INFO 13756 --- [ch03] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-13T16:05:12.909+09:00  INFO 13756 --- [ch03] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-13T16:05:13.396+09:00  INFO 13756 --- [ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-10-13T16:05:13.405+09:00  INFO 13756 --- [ch03] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-13T16:05:13.405+09:00  INFO 13756 --- [ch03] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-13T16:05:13.429+09:00  INFO 13756 --- [ch03] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-13T16:05:13.429+09:00  INFO 13756 --- [ch03] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 519 ms
+2025-10-13T16:05:13.526+09:00  WARN 13756 --- [ch03] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Ambiguous mapping. Cannot map 'myController' method 
+com.example.demo.controller.MyController#page75()
+to {GET [/page75]}: There is already 'myController' bean method
+com.example.demo.controller.MyController#page76() mapped.
+2025-10-13T16:05:13.528+09:00  INFO 13756 --- [ch03] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-10-13T16:05:13.535+09:00  INFO 13756 --- [ch03] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-10-13T16:05:13.552+09:00 ERROR 13756 --- [ch03] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Ambiguous mapping. Cannot map 'myController' method 
+com.example.demo.controller.MyController#page75()
+to {GET [/page75]}: There is already 'myController' bean method
+com.example.demo.controller.MyController#page76() mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1826) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1221) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1187) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1123) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987) ~[spring-context-6.2.11.jar:6.2.11]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.11.jar:6.2.11]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.5.6.jar:3.5.6]
+	at com.example.demo.Ch03Application.main(Ch03Application.java:10) ~[main/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.5.6.jar:3.5.6]
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'myController' method 
+com.example.demo.controller.MyController#page75()
+to {GET [/page75]}: There is already 'myController' bean method
+com.example.demo.controller.MyController#page76() mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:676) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:637) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:331) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:507) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:84) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$2(AbstractHandlerMethodMapping.java:298) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:986) ~[na:na]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:296) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:265) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:224) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:212) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:237) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1873) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1822) ~[spring-beans-6.2.11.jar:6.2.11]
+	... 21 common frames omitted
+
+2025-10-13T16:05:41.843+09:00  INFO 1080 --- [ch03] [restartedMain] com.example.demo.Ch03Application         : Starting Ch03Application using Java 21.0.8 with PID 1080 (D:\s09_springboot\day02_1013\ch03\build\classes\java\main started by YONSAI in D:\s09_springboot\day02_1013\ch03)
+2025-10-13T16:05:41.845+09:00 DEBUG 1080 --- [ch03] [restartedMain] com.example.demo.Ch03Application         : Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-10-13T16:05:41.846+09:00  INFO 1080 --- [ch03] [restartedMain] com.example.demo.Ch03Application         : No active profile set, falling back to 1 default profile: "default"
+2025-10-13T16:05:41.875+09:00  INFO 1080 --- [ch03] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-13T16:05:41.875+09:00  INFO 1080 --- [ch03] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-13T16:05:42.382+09:00  INFO 1080 --- [ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-10-13T16:05:42.391+09:00  INFO 1080 --- [ch03] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-13T16:05:42.391+09:00  INFO 1080 --- [ch03] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-13T16:05:42.414+09:00  INFO 1080 --- [ch03] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-13T16:05:42.414+09:00  INFO 1080 --- [ch03] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 539 ms
+2025-10-13T16:05:42.614+09:00  INFO 1080 --- [ch03] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-13T16:05:42.634+09:00  INFO 1080 --- [ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-10-13T16:05:42.639+09:00  INFO 1080 --- [ch03] [restartedMain] com.example.demo.Ch03Application         : Started Ch03Application in 1.14 seconds (process running for 1.504)
+2025-10-13T16:05:45.044+09:00  INFO 1080 --- [ch03] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-13T16:05:45.045+09:00  INFO 1080 --- [ch03] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-13T16:05:45.045+09:00  INFO 1080 --- [ch03] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-10-13T16:05:45.067+09:00  INFO 1080 --- [ch03] [http-nio-8080-exec-1] com.example.demo.service.MyService       : === 출고 === Sonata
+2025-10-13T16:05:45.067+09:00  INFO 1080 --- [ch03] [http-nio-8080-exec-1] com.example.demo.service.MyService       : === 출고 === K5
+2025-10-13T16:11:29.100+09:00  INFO 1080 --- [ch03] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (1 addition, 0 deletions, 1 modification)
+2025-10-13T16:11:29.100+09:00  INFO 1080 --- [ch03] [Thread-5] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-13T16:11:29.100+09:00  INFO 1080 --- [ch03] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-13T16:11:29.167+09:00  INFO 1080 --- [ch03] [restartedMain] com.example.demo.Ch03Application         : Starting Ch03Application using Java 21.0.8 with PID 1080 (D:\s09_springboot\day02_1013\ch03\build\classes\java\main started by YONSAI in D:\s09_springboot\day02_1013\ch03)
+2025-10-13T16:11:29.167+09:00 DEBUG 1080 --- [ch03] [restartedMain] com.example.demo.Ch03Application         : Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-10-13T16:11:29.167+09:00  INFO 1080 --- [ch03] [restartedMain] com.example.demo.Ch03Application         : No active profile set, falling back to 1 default profile: "default"
+2025-10-13T16:11:29.267+09:00  INFO 1080 --- [ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-10-13T16:11:29.267+09:00  INFO 1080 --- [ch03] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-13T16:11:29.267+09:00  INFO 1080 --- [ch03] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-13T16:11:29.283+09:00  INFO 1080 --- [ch03] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-13T16:11:29.283+09:00  INFO 1080 --- [ch03] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 116 ms
+2025-10-13T16:11:29.317+09:00  INFO 1080 --- [ch03] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-13T16:11:29.332+09:00  INFO 1080 --- [ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-10-13T16:11:29.334+09:00  INFO 1080 --- [ch03] [restartedMain] com.example.demo.Ch03Application         : Started Ch03Application in 0.183 seconds (process running for 348.199)
+2025-10-13T16:11:29.334+09:00  INFO 1080 --- [ch03] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-10-13T16:11:31.858+09:00  INFO 1080 --- [ch03] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-13T16:11:31.858+09:00  INFO 1080 --- [ch03] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-13T16:11:31.859+09:00  INFO 1080 --- [ch03] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-10-13T16:12:58.720+09:00  INFO 1080 --- [ch03] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-10-13T16:12:58.721+09:00  INFO 1080 --- [ch03] [Thread-7] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-13T16:12:58.723+09:00  INFO 1080 --- [ch03] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-13T16:12:58.772+09:00  INFO 1080 --- [ch03] [restartedMain] com.example.demo.Ch03Application         : Starting Ch03Application using Java 21.0.8 with PID 1080 (D:\s09_springboot\day02_1013\ch03\build\classes\java\main started by YONSAI in D:\s09_springboot\day02_1013\ch03)
+2025-10-13T16:12:58.772+09:00 DEBUG 1080 --- [ch03] [restartedMain] com.example.demo.Ch03Application         : Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-10-13T16:12:58.772+09:00  INFO 1080 --- [ch03] [restartedMain] com.example.demo.Ch03Application         : No active profile set, falling back to 1 default profile: "default"
+2025-10-13T16:12:58.872+09:00  INFO 1080 --- [ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-10-13T16:12:58.888+09:00  INFO 1080 --- [ch03] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-13T16:12:58.888+09:00  INFO 1080 --- [ch03] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-13T16:12:58.888+09:00  INFO 1080 --- [ch03] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-13T16:12:58.888+09:00  INFO 1080 --- [ch03] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 116 ms
+2025-10-13T16:12:58.934+09:00  INFO 1080 --- [ch03] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-13T16:12:58.934+09:00  INFO 1080 --- [ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-10-13T16:12:58.950+09:00  INFO 1080 --- [ch03] [restartedMain] com.example.demo.Ch03Application         : Started Ch03Application in 0.194 seconds (process running for 437.815)
+2025-10-13T16:12:58.950+09:00  INFO 1080 --- [ch03] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-10-13T16:13:00.651+09:00  INFO 1080 --- [ch03] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-13T16:13:00.652+09:00  INFO 1080 --- [ch03] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-13T16:13:00.652+09:00  INFO 1080 --- [ch03] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-10-13T16:13:29.035+09:00  INFO 1080 --- [ch03] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-10-13T16:13:29.035+09:00  INFO 1080 --- [ch03] [Thread-11] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-13T16:13:29.038+09:00  INFO 1080 --- [ch03] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-13T16:13:29.072+09:00  INFO 1080 --- [ch03] [restartedMain] com.example.demo.Ch03Application         : Starting Ch03Application using Java 21.0.8 with PID 1080 (D:\s09_springboot\day02_1013\ch03\build\classes\java\main started by YONSAI in D:\s09_springboot\day02_1013\ch03)
+2025-10-13T16:13:29.072+09:00 DEBUG 1080 --- [ch03] [restartedMain] com.example.demo.Ch03Application         : Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-10-13T16:13:29.072+09:00  INFO 1080 --- [ch03] [restartedMain] com.example.demo.Ch03Application         : No active profile set, falling back to 1 default profile: "default"
+2025-10-13T16:13:29.172+09:00  INFO 1080 --- [ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-10-13T16:13:29.172+09:00  INFO 1080 --- [ch03] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-13T16:13:29.172+09:00  INFO 1080 --- [ch03] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-13T16:13:29.172+09:00  INFO 1080 --- [ch03] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-13T16:13:29.172+09:00  INFO 1080 --- [ch03] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 100 ms
+2025-10-13T16:13:29.187+09:00  WARN 1080 --- [ch03] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Ambiguous mapping. Cannot map 'simpleRestController' method 
+com.example.demo.controller.SimpleRestController#hello()
+to { [/bye]}: There is already 'simpleRestController' bean method
+com.example.demo.controller.SimpleRestController#bye() mapped.
+2025-10-13T16:13:29.187+09:00  INFO 1080 --- [ch03] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-10-13T16:13:29.187+09:00  INFO 1080 --- [ch03] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-10-13T16:13:29.203+09:00 ERROR 1080 --- [ch03] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Ambiguous mapping. Cannot map 'simpleRestController' method 
+com.example.demo.controller.SimpleRestController#hello()
+to { [/bye]}: There is already 'simpleRestController' bean method
+com.example.demo.controller.SimpleRestController#bye() mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1826) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1221) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1187) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1123) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987) ~[spring-context-6.2.11.jar:6.2.11]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.11.jar:6.2.11]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.5.6.jar:3.5.6]
+	at com.example.demo.Ch03Application.main(Ch03Application.java:10) ~[main/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.5.6.jar:3.5.6]
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'simpleRestController' method 
+com.example.demo.controller.SimpleRestController#hello()
+to { [/bye]}: There is already 'simpleRestController' bean method
+com.example.demo.controller.SimpleRestController#bye() mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:676) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:637) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:331) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:507) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:84) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$2(AbstractHandlerMethodMapping.java:298) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:986) ~[na:na]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:296) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:265) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:224) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:212) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:237) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1873) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1822) ~[spring-beans-6.2.11.jar:6.2.11]
+	... 21 common frames omitted
+
+2025-10-13T16:15:03.957+09:00  INFO 1080 --- [ch03] [restartedMain] com.example.demo.Ch03Application         : Starting Ch03Application using Java 21.0.8 with PID 1080 (D:\s09_springboot\day02_1013\ch03\build\classes\java\main started by YONSAI in D:\s09_springboot\day02_1013\ch03)
+2025-10-13T16:15:03.957+09:00 DEBUG 1080 --- [ch03] [restartedMain] com.example.demo.Ch03Application         : Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-10-13T16:15:03.957+09:00  INFO 1080 --- [ch03] [restartedMain] com.example.demo.Ch03Application         : No active profile set, falling back to 1 default profile: "default"
+2025-10-13T16:15:04.049+09:00  INFO 1080 --- [ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-10-13T16:15:04.050+09:00  INFO 1080 --- [ch03] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-13T16:15:04.050+09:00  INFO 1080 --- [ch03] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-13T16:15:04.058+09:00  INFO 1080 --- [ch03] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2025-10-13T16:15:04.058+09:00  INFO 1080 --- [ch03] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 101 ms
+2025-10-13T16:15:04.076+09:00  INFO 1080 --- [ch03] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-13T16:15:04.076+09:00  INFO 1080 --- [ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-10-13T16:15:04.076+09:00  INFO 1080 --- [ch03] [restartedMain] com.example.demo.Ch03Application         : Started Ch03Application in 0.134 seconds (process running for 562.956)
+2025-10-13T16:15:04.092+09:00  INFO 1080 --- [ch03] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-10-13T16:15:06.182+09:00  INFO 1080 --- [ch03] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-13T16:15:06.182+09:00  INFO 1080 --- [ch03] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-13T16:15:06.182+09:00  INFO 1080 --- [ch03] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-10-13T16:24:15.615+09:00  INFO 1080 --- [ch03] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-10-13T16:24:15.615+09:00  INFO 1080 --- [ch03] [Thread-15] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-13T16:24:15.615+09:00  INFO 1080 --- [ch03] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-13T16:24:15.655+09:00  INFO 1080 --- [ch03] [restartedMain] com.example.demo.Ch03Application         : Starting Ch03Application using Java 21.0.8 with PID 1080 (D:\s09_springboot\day02_1013\ch03\build\classes\java\main started by YONSAI in D:\s09_springboot\day02_1013\ch03)
+2025-10-13T16:24:15.655+09:00 DEBUG 1080 --- [ch03] [restartedMain] com.example.demo.Ch03Application         : Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-10-13T16:24:15.655+09:00  INFO 1080 --- [ch03] [restartedMain] com.example.demo.Ch03Application         : No active profile set, falling back to 1 default profile: "default"
+2025-10-13T16:24:15.755+09:00  INFO 1080 --- [ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-10-13T16:24:15.755+09:00  INFO 1080 --- [ch03] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-13T16:24:15.755+09:00  INFO 1080 --- [ch03] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-13T16:24:15.755+09:00  INFO 1080 --- [ch03] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2025-10-13T16:24:15.755+09:00  INFO 1080 --- [ch03] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 100 ms
+2025-10-13T16:24:15.802+09:00  INFO 1080 --- [ch03] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-13T16:24:15.802+09:00  INFO 1080 --- [ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-10-13T16:24:15.802+09:00  INFO 1080 --- [ch03] [restartedMain] com.example.demo.Ch03Application         : Started Ch03Application in 0.171 seconds (process running for 1114.678)
+2025-10-13T16:24:15.802+09:00  INFO 1080 --- [ch03] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-10-13T16:24:17.062+09:00  INFO 1080 --- [ch03] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-13T16:24:17.062+09:00  INFO 1080 --- [ch03] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-13T16:24:17.062+09:00  INFO 1080 --- [ch03] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-10-13T16:29:00.006+09:00  INFO 1080 --- [ch03] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-13T16:29:00.006+09:00  INFO 1080 --- [ch03] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
