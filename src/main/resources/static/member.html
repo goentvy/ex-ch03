@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>회원 정보 조회 및 수정</title>
+    <style>
+        body { font-family: Arial; padding: 20px; }
+        input, button { margin: 10px 0; padding: 8px; width: 300px; }
+        .result { margin-top: 10px; color: green; }
+        .error { color: red; }
+    </style>
+</head>
+<body>
+<h2>내 정보 조회</h2>
+<button onclick="getMyInfo()">내 정보 불러오기</button>
+<div id="my-info" class="result"></div>
+
+<h2>회원 정보 조회</h2>
+<input type="text" id="email-query" placeholder="이메일 입력" />
+<button onclick="getMember()">조회</button>
+<div id="member-info" class="result"></div>
+
+<h2>회원 정보 수정</h2>
+<input type="text" id="email-update" placeholder="이메일 입력" />
+<input type="text" id="name-update" placeholder="새 이름 입력" />
+<input type="password" id="password-update" placeholder="새 비밀번호 입력" />
+<button onclick="updateMember()">수정</button>
+<div id="update-result" class="result"></div>
+
+<h2>로그아웃</h2>
+<button onclick="logout()">로그아웃</button>
+
+<script>
+    async function fetchWithToken(url, options = {}) {
+        const token = localStorage.getItem('jwtToken');
+        options.headers = {
+            ...options.headers,
+            'Authorization': `Bearer ${token}`
+        };
+
+        let res = await fetch(url, options);
+
+        if(res.status === 401) {
+            console.warn('Access Token 만료됨. Refresh Token으로 재발급 시도 중...');
+
+            // Access Token 만료 -> Refresh Token으로 재발급 시도
+            const refreshRes = await fetch('/auth/refresh', {
+                method: 'POST',
+                credentials: 'include'
+            });
+            const refreshText = await refreshRes.text();
+            console.log('Refresh 응답:', refreshRes.status, refreshText);
+
+            if(refreshRes.ok) {
+                const newToken = refreshText;
+                localStorage.setItem('jwtToken', newToken);
+                console.log('Access Token 재발급 성공:', newToken);
+
+                // 재시도
+                options.headers['Authorization'] = `Bearer ${newToken}`;
+                res = await fetch(url, options);
+            } else {
+                console.error('Refresh Token 재발급 실패');
+                alert('세션이 만료되었습니다. 다시 로그인해주세요.');
+                logout();
+                window.location.href = '/auth.html';
+                return null;
+            }
+        }
+
+        return res;
+    }
+    async function getMyInfo() {
+        const token = localStorage.getItem('jwtToken');
+
+        const res = await fetchWithToken('/member/me');
+
+        const resultBox = document.getElementById('my-info');
+
+        if (!res) return; // 이미 처리됨
+        if (res.ok) {
+            const data = await res.json();
+            resultBox.textContent = `이메일: ${data.email}, 이름: ${data.name}`;
+        } else {
+            resultBox.textContent = '회원 정보를 불러올 수 없습니다.';
+        }
+    }
+    async function getMember() {
+        const email = document.getElementById('email-query').value;
+        const token = localStorage.getItem('jwtToken');
+
+        const res = await fetch(`/member/${email}`, {
+            headers: {
+                'Authorization': `Bearer ${token}`
+            }
+        });
+
+        if (res.ok) {
+            const data = await res.json();
+            document.getElementById('member-info').textContent =
+                `이메일: ${data.email}, 이름: ${data.name}`;
+        } else {
+            document.getElementById('member-info').textContent = '회원 정보를 찾을 수 없습니다.';
+        }
+    }
+
+    async function updateMember() {
+        const email = document.getElementById('email-update').value;
+        const name = document.getElementById('name-update').value;
+        const password = document.getElementById('password-update').value;
+
+        const res = await fetch(`/member/${email}`, {
+            method: 'PUT',
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${token}`
+            },
+            body: JSON.stringify({ name, password })
+        });
+
+        const result = await res.text();
+        document.getElementById('update-result').textContent = result;
+    }
+
+    function logout() {
+        localStorage.removeItem('jwtToken'); // Access Token 제거
+
+        fetch('/auth/logout', {
+            method: 'POST',
+            credentials: 'include' // 쿠키 포함
+        });
+
+        // 이후 로그인 페이지 이동
+        // window.location.href='/auth.html';
+    }
+</script>
+</body>
+</html>
