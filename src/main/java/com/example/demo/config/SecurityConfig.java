@@ -4,6 +4,7 @@ import com.example.demo.jwt.JwtFilter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.HttpMethod;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer;
@@ -26,6 +27,8 @@ public class SecurityConfig {
         http
             .csrf(AbstractHttpConfigurer::disable) // CSRF 보호 비활성화
             .authorizeHttpRequests(auth -> auth
+                    .requestMatchers(HttpMethod.OPTIONS, "/**").permitAll() // CORS preflight 요청 허용
+                    .requestMatchers("/signup", "/login").permitAll()
                     .requestMatchers("/auth/**", "/auth.html", "/member.html", "/member/**").permitAll()
                     .requestMatchers("/auth/logout").permitAll()
                     .anyRequest().authenticated()
