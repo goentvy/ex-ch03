@@ -1,6 +1,6 @@
-package com.example.demo.config;
+package com.entvy.auth.config;
 
-import com.example.demo.jwt.JwtFilter;
+import com.entvy.auth.jwt.JwtFilter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -28,8 +28,9 @@ public class SecurityConfig {
             .csrf(AbstractHttpConfigurer::disable) // CSRF 보호 비활성화
             .authorizeHttpRequests(auth -> auth
                     .requestMatchers(HttpMethod.OPTIONS, "/**").permitAll() // CORS preflight 요청 허용
-                    .requestMatchers("/signup", "/login").permitAll()
-                    .requestMatchers("/auth/**", "/auth.html", "/member.html", "/member/**").permitAll()
+                    .requestMatchers("/signup", "/login", "/reissue").permitAll()
+                    .requestMatchers("/auth/**", "/auth.html", "/member.html").permitAll()
+//                    .requestMatchers("/member/**").permitAll() // 인증 필요한 /member/me
                     .requestMatchers("/auth/logout").permitAll()
                     .anyRequest().authenticated()
             )

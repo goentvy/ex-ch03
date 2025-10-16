@@ -1,12 +1,14 @@
-package com.example.demo.dto;
+package com.entvy.auth.dto;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Getter
 @Setter
+@NoArgsConstructor
 public class SignupRequestDto {
 
     @NotBlank(message = "이메일은 필수입니다.")
@@ -18,4 +20,10 @@ public class SignupRequestDto {
 
     @NotBlank(message = "이름은 필수입니다.")
     private String name;
+
+    public SignupRequestDto(String email, String password, String user) {
+        this.email = email;
+        this.password = password;
+        this.name = user;
+    }
 }

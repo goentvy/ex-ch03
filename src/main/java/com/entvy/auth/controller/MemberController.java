@@ -1,8 +1,8 @@
-package com.example.demo.controller;
+package com.entvy.auth.controller;
 
-import com.example.demo.dto.MemberResponseDto;
-import com.example.demo.dto.MemberUpdateDto;
-import com.example.demo.service.MemberService;
+import com.entvy.auth.dto.MemberResponseDto;
+import com.entvy.auth.dto.MemberUpdateDto;
+import com.entvy.auth.service.MemberService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;

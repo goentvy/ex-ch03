@@ -1,0 +1,61 @@
+# Auth Flow Summary (.me)
+
+## 전체 흐름: 회원가입 → 로그인 → 회원정보조회 → 회원정보수정 → 로그아웃 → 토큰 재발급
+
+---
+
+## 1. 회원가입 (POST /auth/signup)
+- DTO: SignupRequestDto
+- Controller: AuthController
+- Service: MemberService.signup()
+- 기능: 이메일, 비밀번호, 이름을 받아 회원 생성
+
+---
+
+## 2. 로그인 (POST /auth/login)
+- DTO: LoginRequestDto
+- Controller: AuthController
+- Service: JwtUtil.createAccessToken(), createRefreshToken()
+- 기능: accessToken은 본문, refreshToken은 HttpOnly 쿠키로 반환
+
+---
+
+## 3. 회원정보 조회 (GET /member/me)
+- Controller: MemberController
+- Service: MemberService.getMemberInfo(email)
+- 기능: accessToken에서 이메일 추출 → 사용자 정보 반환
+
+---
+
+## 4. 회원정보 수정 (PUT /member/{email})
+- DTO: MemberUpdateDto
+- Controller: MemberController
+- Service: MemberService.updateMember(email, dto)
+- 기능: 이름, 비밀번호 등 수정
+
+---
+
+## 5. 로그아웃 (POST /auth/logout)
+- Controller: AuthController
+- 기능: accessToken 기반 사용자 로그아웃 → refreshToken 삭제
+
+---
+
+## 6. 토큰 재발급 (POST /auth/reissue)
+- DTO: TokenRequestDto
+- Controller: AuthController
+- 기능: refreshToken으로 accessToken 재발급
+
+---
+
+## Security 설정 요약
+- permitAll: /auth/**, /signup, /login, /reissue, /auth/logout
+- 인증 필요: /member/**
+- JWT 필터로 accessToken 검증
+
+---
+
+## 테스트 흐름 (AuthFlowTest)
+- 회원가입 → 로그인 → accessToken/refreshToken 추출
+- 사용자 정보 조회 → 정보 수정 → 로그아웃 → 재발급 시도
+- MockMvc + ObjectMapper 사용

@@ -1,4 +1,4 @@
-package com.example.demo.jwt;
+package com.entvy.auth.jwt;
 
 import jakarta.servlet.*;
 import jakarta.servlet.http.*;

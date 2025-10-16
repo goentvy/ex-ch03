@@ -1,4 +1,4 @@
-package com.example.demo.dto;
+package com.entvy.auth.dto;
 
 import jakarta.validation.constraints.NotBlank;
 import lombok.Getter;

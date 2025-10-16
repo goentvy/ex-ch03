@@ -1,4 +1,4 @@
-package com.example.demo.entity;
+package com.entvy.auth.entity;
 
 import jakarta.persistence.*;
 import lombok.*;

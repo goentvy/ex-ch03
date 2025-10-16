@@ -108,6 +108,7 @@
         const email = document.getElementById('email-update').value;
         const name = document.getElementById('name-update').value;
         const password = document.getElementById('password-update').value;
+        console.log(token);
 
         const res = await fetch(`/member/${email}`, {
             method: 'PUT',
@@ -131,7 +132,7 @@
         });
 
         // 이후 로그인 페이지 이동
-        // window.location.href='/auth.html';
+        window.location.href='/auth.html';
     }
 </script>
 </body>

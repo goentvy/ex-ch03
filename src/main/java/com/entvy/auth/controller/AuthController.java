@@ -1,17 +1,17 @@
-package com.example.demo.controller;
+package com.entvy.auth.controller;
 
-import com.example.demo.dto.LoginRequestDto;
-import com.example.demo.dto.SignupRequestDto;
-import com.example.demo.dto.TokenRequestDto;
-import com.example.demo.dto.TokenResponse;
-import com.example.demo.entity.Member;
-import com.example.demo.entity.RefreshToken;
-import com.example.demo.jwt.JwtUtil;
-import com.example.demo.repository.MemberRepository;
-import com.example.demo.repository.RefreshTokenRepository;
+import com.entvy.auth.dto.LoginRequestDto;
+import com.entvy.auth.dto.SignupRequestDto;
+import com.entvy.auth.dto.TokenRequestDto;
+import com.entvy.auth.dto.TokenResponseDto;
+import com.entvy.auth.entity.Member;
+import com.entvy.auth.entity.RefreshToken;
+import com.entvy.auth.jwt.JwtUtil;
+import com.entvy.auth.repository.MemberRepository;
+import com.entvy.auth.repository.RefreshTokenRepository;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
-import org.springframework.data.redis.core.RedisTemplate;
+//import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.http.ResponseCookie;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -20,7 +20,6 @@ import org.springframework.web.bind.annotation.*;
 
 import jakarta.validation.Valid;
 
-import java.time.Duration;
 import java.time.LocalDateTime;
 import java.util.Optional;
 
@@ -28,33 +27,33 @@ import java.util.Optional;
 @RequestMapping("/auth")
 @RequiredArgsConstructor
 public class AuthController {
-    private final RedisTemplate<String, String> redisTemplate;
+//    private final RedisTemplate<String, String> redisTemplate;
     private final MemberRepository memberRepository;
     private final RefreshTokenRepository refreshTokenRepository;
     private final PasswordEncoder passwordEncoder;
     private final JwtUtil jwtUtil;
 
     // JWT 재발급 로직
-//    @PostMapping("reissue")
-//    public ResponseEntity<TokenResponse> reissue(@RequestBody TokenRequestDto request) {
-//        String refreshToken = request.getRefreshToken();
-//
-//        RefreshToken token = refreshTokenRepository.findByToken(refreshToken)
-//                .orElseThrow(() -> new RuntimeException("Refresh Token not found"));
-//
-//        if(token.getExpiryDate().isBefore(LocalDateTime.now())) {
-//            throw new RuntimeException("Refresh Token expired");
-//        }
-//
-//        String newAccessToken = jwtProvider.createAccessToken(token.getEmail());
-//        String newRefreshToken = jwtProvider.createRefreshToken();
-//
-//        // 기존 토큰 삭제 후 새 토큰 저장
-//        refreshTokenRepository.deleteByEmail(token.getEmail());
-//        refreshTokenRepository.save(new RefreshToken(token.getEmail(), newRefreshToken, LocalDateTime.now().plusDays(7)));
-//
-//        return ResponseEntity.ok(new TokenResponse(newAccessToken, newRefreshToken));
-//    }
+    @PostMapping("/reissue")
+    public ResponseEntity<TokenResponseDto> reissue(@RequestBody TokenRequestDto request) {
+        String refreshToken = request.getRefreshToken();
+
+        RefreshToken token = refreshTokenRepository.findByToken(refreshToken)
+                .orElseThrow(() -> new RuntimeException("Refresh Token not found"));
+
+        if(token.getExpiresAt().isBefore(LocalDateTime.now())) {
+            throw new RuntimeException("Refresh Token expired");
+        }
+
+        String newAccessToken = jwtUtil.createAccessToken(token.getEmail());
+        String newRefreshToken = jwtUtil.createRefreshToken(token.getEmail());
+
+        // 기존 토큰 삭제 후 새 토큰 저장
+        refreshTokenRepository.deleteByEmail(token.getEmail());
+        refreshTokenRepository.save(new RefreshToken(token.getEmail(), newRefreshToken, LocalDateTime.now().plusDays(7)));
+
+        return ResponseEntity.ok(new TokenResponseDto(newAccessToken, newRefreshToken));
+    }
 
     @PostMapping("/refresh")
     public ResponseEntity<?> refreshAccessToken(@CookieValue(value = "refreshToken", required = false) String refreshToken) {
@@ -120,11 +119,12 @@ public class AuthController {
         String accessToken = jwtUtil.createAccessToken(member.getEmail());
         String refreshToken = jwtUtil.createRefreshToken(member.getEmail());
 
-        redisTemplate.opsForValue().set(
-            "refreshToken:" + member.getEmail(),
-            refreshToken,
-            Duration.ofDays(7)
-        );
+        // Redis 저장
+//        redisTemplate.opsForValue().set(
+//            "refreshToken:" + member.getEmail(),
+//            refreshToken,
+//            Duration.ofDays(7)
+//        );
         // Refresh Token DB 저장
         RefreshToken refreshTokenEntity = new RefreshToken();
         refreshTokenEntity.setEmail(member.getEmail());

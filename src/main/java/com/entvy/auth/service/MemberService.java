@@ -1,9 +1,9 @@
-package com.example.demo.service;
+package com.entvy.auth.service;
 
-import com.example.demo.dto.MemberResponseDto;
-import com.example.demo.dto.MemberUpdateDto;
-import com.example.demo.entity.Member;
-import com.example.demo.repository.MemberRepository;
+import com.entvy.auth.dto.MemberResponseDto;
+import com.entvy.auth.dto.MemberUpdateDto;
+import com.entvy.auth.entity.Member;
+import com.entvy.auth.repository.MemberRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
