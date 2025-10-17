@@ -6,11 +6,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class SimpleRestController {
-    // 5-2-1 첫번째 컨트롤러
-    @RequestMapping("/")
-    public String hello() {
-        return "Hello <strong>Backend</strong>";
-    }
+//    // 5-2-1 첫번째 컨트롤러
+//    @RequestMapping("/")
+//    public String hello() {
+//        return "Hello <strong>Backend</strong>";
+//    }
 
     // 5-2-2 첫번째 컨트롤러
     @RequestMapping("/bye")

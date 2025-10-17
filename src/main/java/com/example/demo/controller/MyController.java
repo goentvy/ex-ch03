@@ -20,10 +20,6 @@ public class MyController {
 		this.myService = myService;
 	}
 	
-//	@GetMapping("/")
-//	public String getMethodName() {
-//		return myService.sayHello("안녕");
-//	}
 	@GetMapping("/page70")
 	public String page70() {
 		return myService.page70();

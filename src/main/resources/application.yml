@@ -6,7 +6,11 @@ spring:
     username: root
     password: 9785
     driver-class-name: org.mariadb.jdbc.Driver
-
+  web:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
   jpa:
     hibernate:
       ddl-auto: update
@@ -14,6 +18,16 @@ spring:
     properties:
       hibernate:
         format_sql: true
+  # 타임리프 자동 읽기
+  thymeleaf:
+    cache: false
+  # Mustache 설정
+  mustache:
+    charset: utf-8
+    suffix: .mustache
+    prefix: classpath:/templates/
+    servlet:
+      cache: false
 
 #  Redis 설정 ( 추후 테스트 예정 )
 #  data:
