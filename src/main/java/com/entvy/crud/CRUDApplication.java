@@ -1,15 +1,16 @@
-package com.example.demo;
+package com.entvy.crud;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 
 //@SpringBootApplication(exclude = { DataSourceAutoConfiguration.class })
 @SpringBootApplication
-public class Ch03Application {
+@MapperScan("com.entvy.crud.mapper")
+public class CRUDApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(Ch03Application.class, args);
+        SpringApplication.run(CRUDApplication.class, args);
     }
 
 }

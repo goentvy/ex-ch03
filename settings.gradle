@@ -1,1 +1,3 @@
-rootProject.name = 'ch03'
+rootProject.name = 'ex-ch03'
+
+include 'crud'
