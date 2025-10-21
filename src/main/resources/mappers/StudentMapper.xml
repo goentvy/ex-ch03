@@ -1,8 +1,37 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.entvy.crud.mapper.StudentMapper">
+
+<!--<mapper namespace="com.entvy.crud.mapper.StudentMapper">-->
+<!--    <select id="findAll" resultType="Student">-->
+<!--        SELECT * FROM student ORDER BY id DESC-->
+<!--    </select>-->
+<!--</mapper>-->
+
+<mapper namespace="com.entvy.student.mapper.StudentMapper">
     <select id="findAll" resultType="Student">
-        SELECT * FROM student ORDER BY id DESC
+        SELECT * FROM students
     </select>
+
+    <select id="findById" parameterType="long" resultType="Student">
+        SELECT * FROM students WHERE id = #{id}
+    </select>
+
+    <select id="existsByEmail" parameterType="string" resultType="boolean">
+        SELECT COUNT(*) > 0 FROM students WHERE email = #{email}
+    </select>
+
+    <insert id="insert" parameterType="Student">
+        INSERT INTO students (name, email, age, created_at, updated_at)
+        VALUES (#{name}, #{email}, #{age}, NOW(), NOW())
+    </insert>
+
+    <update id="update" parameterType="Student">
+        UPDATE students SET name=#{name}, email=#{email}, age=#{age}, updated_at=NOW()
+        WHERE id=#{id}
+    </update>
+
+    <delete id="delete" parameterType="long">
+        DELETE FROM students WHERE id=#{id}
+    </delete>
 </mapper>

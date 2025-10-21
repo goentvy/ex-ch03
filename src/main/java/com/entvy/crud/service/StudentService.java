@@ -12,6 +12,7 @@ import java.util.List;
 @RequiredArgsConstructor
 @Transactional
 public class StudentService {
+
     private final StudentMapper studentMapper;
 
     public List<Student> findAll() {
