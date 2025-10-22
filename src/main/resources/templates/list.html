@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>학생 목록</title>
+</head>
+<body>
+<h1>전체 학생 목록</h1>
+
+<table border="1">
+    <thead>
+    <tr>
+        <th>이름</th>
+        <th>이메일</th>
+        <th>나이</th>
+        <th>수정</th>
+        <th>삭제</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="student : ${students}">
+        <td th:text="${student.name}">이름</td>
+        <td th:text="${student.email}">이메일</td>
+        <td th:text="${student.age}">나이</td>
+        <td>
+            <a th:href="@{'/students/' + ${student.id} + '/edit'}">수정</a>
+        </td>
+        <td>
+            <form th:action="@{'/students/' + ${student.id} + '/delete'}" method="post" th:object="${student}">
+                <button type="submit" onclick="return confirm('정말 삭제하시겠습니까?');">삭제</button>
+            </form>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+<br>
+<a th:href="@{/students/new}">학생 등록하기</a>
+</body>
+</html>

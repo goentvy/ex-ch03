@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>ToDo List</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f4f6f8;
+            margin: 0;
+            padding: 40px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .add-form {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .add-form input[type="text"] {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+
+        .add-form button {
+            padding: 10px 16px;
+            background-color: #4CAF50; /* 녹색 */
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .add-form button:hover {
+            background-color: #45a049;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            background: #f9f9f9;
+            padding: 12px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .todo-form {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex: 1;
+        }
+
+        .task-left {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .task-left input[type="text"] {
+            border: none;
+            background: transparent;
+            font-size: 16px;
+            width: 200px;
+        }
+
+        .task-actions {
+            display: flex;
+            justify-content: flex-end;
+            gap: 5px;
+            margin-right: 5px;
+        }
+
+        button {
+            padding: 8px 12px;
+            border: none;
+            border-radius: 6px;
+            font-size: 14px;
+            cursor: pointer;
+            color: white;
+        }
+
+        button.edit {
+            background-color: #2196F3; /* 파란색 */
+        }
+
+        button.delete {
+            background-color: #f44336; /* 빨간색 */
+        }
+
+        button.edit:hover {
+            background-color: #1976D2;
+        }
+
+        button.delete:hover {
+            background-color: #d32f2f;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>ToDo List</h1>
+
+    <form th:action="@{/add}" method="post" class="add-form">
+        <input type="text" name="title" placeholder="할 일을 입력하세요" required />
+        <button type="submit">추가</button>
+    </form>
+
+    <ul>
+        <li th:each="todo : ${todos}">
+            <form th:action="@{/update}" method="post" class="todo-form">
+                <div class="task-left">
+                    <input type="hidden" th:name="id" th:value="${todo.id}" />
+                    <input type="text" th:name="title" th:value="${todo.title}" />
+
+                </div>
+                <div class="task-actions">
+                    <input type="checkbox" name="completed" th:checked="${todo.completed}" />
+                    <button type="submit" class="edit">수정</button>
+                </div>
+            </form>
+
+            <form th:action="@{/delete}" method="post" class="task-actions">
+                <input type="hidden" th:name="id" th:value="${todo.id}" />
+                <button type="submit" class="delete">삭제</button>
+            </form>
+        </li>
+    </ul>
+</div>
+</body>
+</html>

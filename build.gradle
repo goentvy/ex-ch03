@@ -63,9 +63,9 @@ dependencies {
 //    implementation 'org.springframework.data:spring-data-redis'
 //    implementation 'org.apache.commons:commons-pool2'
 }
-springBoot {
-    mainClass = 'com.entvy.crud.CRUDApplication'
-}
+//springBoot {
+//    mainClass = 'com.entvy.crud.CRUDApplication'
+//}
 
 //tasks.named('bootRun') {
 //    mainClass.set('com.entvy.crud.CRUDApplication')
